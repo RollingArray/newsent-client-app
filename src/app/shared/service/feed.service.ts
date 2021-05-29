@@ -1,3 +1,16 @@
+/**
+ * © Rolling Array https://rollingarray.co.in/
+ *
+ * long description for the file
+ *
+ * @summary Feed service
+ * @author code@rollingarray.co.in
+ *
+ * Created at     : 2021-05-29 23:55:53 
+ * Last modified  : 2021-05-29 23:55:53 
+ */
+
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AlertController } from '@ionic/angular';
