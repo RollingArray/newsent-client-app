@@ -1,0 +1,9 @@
+.card-no-shadow
+{
+  box-shadow:none !important
+}
+
+p{
+  color: #ccc;
+  margin: 10px;
+}

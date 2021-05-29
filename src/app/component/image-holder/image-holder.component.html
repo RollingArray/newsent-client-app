@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="spin" *ngIf="isLoading">
+		<ion-spinner color="primary" name="bubbles" *ngIf="image != 'default'"></ion-spinner>
+	</div>
+	<!-- <ion-spinner name="lines" color="primary" *ngIf="isLoading"></ion-spinner> -->
+	<!-- <div [ngStyle]="{height:height+'px',width:width+'px'}" *ngIf="isLoading" class="loading">
+		<img [src]="loader" />
+	</div> -->
+	<img [src]=image (load)="hideLoader()" (error)="hideLoader()" class="feed-thumb" *ngIf="image != 'default'"/>
+	<img [src]='stringKey.DEFAULT_IMAGE' *ngIf="image === 'default'"/>
+	
+	<div class="image-bottom">
+		
+	</div>
+
+</div>

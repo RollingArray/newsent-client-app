@@ -1,0 +1,12 @@
+#columns {
+    column-width: 300px;
+    column-gap: 15px;
+    width: 97%;
+    margin: 10px auto;
+}
+
+div#columns figure {
+    margin: 0;
+    display: inline-block;
+    column-break-inside: avoid;
+}

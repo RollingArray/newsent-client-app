@@ -5,8 +5,15 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start-local": "ionic serve --port 8001",
+    "start-local-stage": "ionic serve --port 8002 --configuration=stage",
+    "start-local-prod": "ionic serve --port 8003 --configuration=prod",
+    "build-local-dev": "ionic build --configuration=dev",
+    "build-local-stage": "ionic build --configuration=stage",
+    "build-local-prod": "ionic build --configuration=prod",
+    "build-dev": "ng build --configuration=dev",
+    "build-stage": "ng build --configuration=stage",
+    "build-prod": "ng build --configuration=prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -20,6 +27,8 @@
     "@angular/platform-browser-dynamic": "~12.0.1",
     "@angular/router": "~12.0.1",
     "@ionic/angular": "^5.5.2",
+    "chart.js": "^2.9.3",
+    "@angular/service-worker": "~11.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"

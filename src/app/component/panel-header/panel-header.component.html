@@ -1,0 +1,9 @@
+<ion-item [color]="panelColor" lines="none" (click)="onPanelTap()">
+  <ion-icon [src]="panelIcon"></ion-icon>
+  <p>
+    <b>
+      {{panelTitle}}
+    </b>
+  </p>
+  <ion-icon slot="end" [src]="eventIcon" *ngIf="isEventRequired" ></ion-icon>
+</ion-item>

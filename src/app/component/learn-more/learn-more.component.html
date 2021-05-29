@@ -1,0 +1,53 @@
+<ion-header [appScrollTracker] = 'scrollArea'>
+  <ion-toolbar color="primary">
+    <ion-title>
+      {{stringKey.APP_NAME}}
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="outline" (click)="closeModal()">{{
+            stringKey.CLOSE
+        }}</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  color="light" lines="none" #scrollArea scrollEvents="true">
+  <!-- page title -->
+  <ion-grid lines="none">
+    <p align="center">
+      <img src="assets/images/app_icon.svg" />
+    </p>
+    <p align="center">
+      <ion-label>{{stringKey.APP_VERSION}}</ion-label>
+    </p>
+    <p align="center">
+      {{stringKey.COPYRIGHT}} {{year}} | <b>{{stringKey.OWNER_EMAIL}}</b>
+    </p>
+    <p align="center">
+      {{stringKey.QUERY}} <br><b>{{stringKey.SUPPORT_EMAIL}}</b>
+    </p>
+    <ion-card>
+      <ion-item color="primary" lines="none">
+        <h3>
+          <ion-icon color="info" slot="start" [src]="stringKey.ICON_MENU"></ion-icon>
+          {{stringKey.WHAT_WE_ARE}}
+        </h3>
+      </ion-item>
+      
+      
+      <ion-item lines="none">
+        <p [innerHTML]="stringKey.WHAT_WE_ARE_INFO_1" color="primary"></p>
+        
+      </ion-item>
+      <ion-item lines="none">
+        <p [innerHTML]="stringKey.WHAT_WE_ARE_INFO_2" color="primary"></p>
+      </ion-item>
+
+      
+      <ion-item lines="none" color="warning">
+        <ion-icon color="danger" slot="start" [src]="stringKey.ICON_WARNING"></ion-icon>
+        <p [innerHTML]="stringKey.WHAT_WE_ARE_INFO_4" color="primary"></p>
+      </ion-item>
+    </ion-card>
+  </ion-grid>
+</ion-content>

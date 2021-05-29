@@ -1,0 +1,40 @@
+<!-- header -->
+<ion-header>
+	<ion-toolbar color="primary">
+		<ion-title>
+			<img width="90" [src]='stringKey.ICON_HEADER'/>
+		</ion-title>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-icon slot="start" (click)="loadRecentData()" [src]="stringKey.ICON_REFRESH" *ngIf="!loadingContent"></ion-icon>
+			<ion-spinner color="primary" *ngIf="loadingContent"></ion-spinner>
+		</ion-buttons>
+
+	</ion-toolbar>
+</ion-header>
+<!-- header -->
+<ion-content color="dark">
+	<!-- refresh btn -->
+	<ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	<!-- refresh btn -->
+	<app-sentiment-over-time [sentimentModel]="sentimentOverTime" ></app-sentiment-over-time>
+	
+	<!-- no data -->
+	<app-no-data *ngIf="!hasData" [text]="stringKey.NO_DATA_MY_FEED"></app-no-data>
+	<!-- no data -->
+	<ng-container *ngIf="hasData">
+		<div id="columns">
+			<figure *ngFor="let feed of feeds" (click)="feedDetails(feed)">
+				<app-feed-thumbnail [feed]="feed" [isDetailView]=false></app-feed-thumbnail>
+			</figure>
+		</div>
+		<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+			<ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+			</ion-infinite-scroll-content>
+		</ion-infinite-scroll>
+	</ng-container>
+</ion-content>

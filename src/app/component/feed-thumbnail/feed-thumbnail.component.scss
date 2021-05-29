@@ -1,0 +1,115 @@
+.appName {
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+  white-space: initial;
+}
+
+.appList {
+  color: var(--ion-color-dark-grey);
+  font-size: 14px;
+  font-weight: 300;
+  white-space: initial;
+}
+
+.detailsIcon {
+  margin: auto;
+}
+
+.informationIcon {
+  font-size: 18px;
+  float: right;
+}
+
+
+
+.box {
+  padding: 6px;
+}
+
+#grad {
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, red, orange, yellow, green);
+}
+
+.has-card-footer {
+  padding-bottom: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 25%px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+ion-range {
+  pointer-events: none;
+  --bar-height: 10px;
+  --bar-border-radius: 10px;
+  --bar-background: linear-gradient(to right, red, orange, yellow, #008000);
+  --bar-background-active: rgba(0, 0, 0, 0);
+  --knob-border-radius: 20px;
+  --knob-size: 40px;
+  --knob-background: DodgerBlue;
+}
+
+ion-img {
+  width: 40px;
+  height: 40px;
+  width: auto !important;
+  align-items: center;
+}
+
+ion-card {
+  --background: #2b2e2f;
+  border-radius: 20px;
+  box-shadow: 4px 3px 15px 1px #000000;
+  cursor: pointer;
+}
+
+
+ion-card-title {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+ion-footer{
+	background: var(--ion-color-primary);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+ion-footer ion-button{
+  // float: right;
+  width: 100%;
+}
+
+.line {
+  background: #888a8a;
+    height: 1px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+ion-card-content{
+  font-size: 15px;	
+  color: #fff;
+  
+}

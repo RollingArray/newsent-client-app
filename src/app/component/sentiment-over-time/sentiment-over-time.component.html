@@ -1,0 +1,9 @@
+<ion-card>
+  <ion-card-header>
+    {{stringKey.SENTIMENT_OVER_TODAY}}
+  </ion-card-header>
+  <!-- no data -->
+	<app-no-data *ngIf="!hasData" [text]="stringKey.API_REQUEST_MESSAGE_16"></app-no-data>
+	<!-- no data -->
+  <canvas id="sentiment" height="400"></canvas>
+</ion-card>

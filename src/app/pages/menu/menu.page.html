@@ -1,0 +1,56 @@
+<ion-app>
+  <ion-split-pane contentId="content">
+    <ion-menu contentId="content" type="overlay">
+      <ion-content color="semi-dark-gradient">
+        <ion-grid lines="none">
+          <p align="center">
+            <img src="assets/images/app_icon.svg" />
+          </p>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" color="dark" (click)="learn()">
+                <ion-icon [src]="stringKey.ICON_LEARN"></ion-icon>
+                <ion-label>&nbsp; {{stringKey.LEARN}} </ion-label>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" color="dark" (click)="faq()">
+                <ion-icon [src]="stringKey.ICON_DOCUMENT"></ion-icon>
+                <ion-label>&nbsp; {{stringKey.FAQ}} </ion-label>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" color="dark" (click)="tnc()">
+                <ion-icon [src]="stringKey.ICON_DOCUMENT"></ion-icon>
+                <ion-label>&nbsp; {{stringKey.T_N_C}} </ion-label>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" color="dark" (click)="pp()">
+                <ion-icon [src]="stringKey.ICON_DOCUMENT"></ion-icon>
+                <ion-label>&nbsp; {{stringKey.P_P}} </ion-label>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+      <ion-footer>
+        <ion-toolbar color="primary">
+          <p align="center">
+            <ion-label>Version {{stringKey.APP_VERSION}}</ion-label>
+          </p>
+        </ion-toolbar>
+      </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
