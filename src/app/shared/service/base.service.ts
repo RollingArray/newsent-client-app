@@ -1,15 +1,19 @@
+/**
+ * © Rolling Array https://rollingarray.co.in/
+ *
+ * long description for the file
+ *
+ * @summary Base api service
+ * @author code@rollingarray.co.in
+ *
+ * Created at     : 2021-05-29 23:52:55 
+ * Last modified  : 2021-05-29 23:53:12
+ */
+
+
 import { ApiUrls } from "./../constant/api-urls.constant";
 import { AlertController } from "@ionic/angular";
 import { AlertService } from "./alert.service";
-
-/**
- * @author Ranjoy Sen
- * @email ranjoy.sen@mindtree.com
- * @create date 2018-12-11
- * @modify date 2018-12-13
- * @desc Base service class used for all the api request, any other services call should extent this server class
- */
-
 import { Injectable } from "@angular/core";
 import { BaseModel } from "./../model/base.model";
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
