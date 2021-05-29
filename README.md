@@ -1,4 +1,6 @@
 
+
+![Newsent logo](https://github.com/RollingArray/newsent-client-app/blob/DEV/src/assets/images/og-image.jpg?raw=true)
 ***[`Newsent`](http://newsent.rollingarray.co.in/)***  is a real-time feed sentiment analysis platform.
 
 We are constantly processing fake news, negative news, and news that causes us to feel  pressure to conform to agonizing social standards. All of this can lead to physical or mental anguish and burnout. ***[`Newsent`](http://newsent.rollingarray.co.in/)*** is a real-time news sentiment analysis platform. ***[`Newsent`](http://newsent.rollingarray.co.in/)***  aggregates news from various trustable news sources and analysis the content in real time and brings to you. The analysis classifies the feeds in to emotional categories such as Angry, Sad, Neutral, Happy, Delightful. As a result, you get to know which feed you should avoid to decrease any such negativity from your day to day life
