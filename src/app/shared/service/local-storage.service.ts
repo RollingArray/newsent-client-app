@@ -1,3 +1,16 @@
+/**
+ * © Rolling Array https://rollingarray.co.in/
+ *
+ * long description for the file
+ *
+ * @summary Local storage service
+ * @author code@rollingarray.co.in
+ *
+ * Created at     : 2021-05-29 23:56:53 
+ * Last modified  : 2021-05-29 23:57:09
+ */
+
+
 
 import { Injectable } from '@angular/core';
 import { LocalStoreKey } from '../constant/local-store-key.constant';
