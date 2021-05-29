@@ -1,0 +1,45 @@
+.split-pane-visible >.split-pane-side {
+  min-width: 350px!important;
+  max-width: 350px!important;
+}
+
+.active {
+    --ion-text-color: var(--ion-color-primary);
+    ion-icon {
+        --ion-text-color-rgb: var(--ion-color-primary);
+    }
+}
+ 
+.parent-active {
+    font-weight: 500;
+}
+ 
+.sub-item {
+    padding-left: 0px;
+    font-size: small;
+}
+
+.profilepicposition  {
+  position: absolute;
+  top: -80%;
+  right: 0%;
+  z-index: 89;
+}
+
+
+.profilepicsize  {
+  width: 50% !important;  
+  height : 50% !important;  
+  max-width: 20px !important;  //any size
+  max-height: 20px !important; //any size 
+}
+
+.fav-icon1 {
+  width: 70% !important; 
+  margin: 50px 0 ;
+  text-align: center;
+}
+
+.segment {
+	text-shadow: 1px 1px #000;
+}

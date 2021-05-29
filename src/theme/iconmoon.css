@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../assets/font/icomoon/icomoon.eot?ata3wu');
+  src:  url('../assets/font/icomoon/icomoon.eot?ata3wu#iefix') format('embedded-opentype'),
+    url('../assets/font/icomoon/icomoon.ttf?ata3wu') format('truetype'),
+    url('../assets/font/icomoon/icomoon.woff?ata3wu') format('woff'),
+    url('../assets/font/icomoon/icomoon.svg?ata3wu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-happy2:before {
+  content: "\e9e0";
+}
+.icon-smile2:before {
+  content: "\e9e2";
+}
+.icon-sad2:before {
+  content: "\e9e6";
+}
+.icon-angry2:before {
+  content: "\e9ee";
+}
+.icon-confused2:before {
+  content: "\e9f6";
+}

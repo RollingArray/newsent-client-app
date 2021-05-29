@@ -1,0 +1,28 @@
+<ion-header>
+	<ion-toolbar color="primary">
+		<ion-title>
+			{{feed.source}}
+		</ion-title>
+		<ion-buttons slot="end">
+			<ion-button fill="outline" (click)="closeModal()">{{
+				stringKey.CLOSE
+				}}</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<!-- header -->
+<ion-content color="dark">
+	<ion-row>
+		<app-feed-thumbnail [isDetailView]=true [feed]="feed"></app-feed-thumbnail>
+	</ion-row>
+</ion-content>
+<ion-footer>
+	<ion-toolbar color="primary">
+		<ion-buttons slot="end">
+			<ion-button fill="outline" (click)="readFeed()">{{
+				stringKey.READ
+				}}</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-footer>

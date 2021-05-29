@@ -1,0 +1,22 @@
+ion-card {
+    --background: #2b2e2f;
+    border-radius: 20px;
+    box-shadow: 4px 3px 15px 1px #000000;
+    cursor: pointer;
+    height: 480px;
+  }
+
+  canvas { 
+    // height: 100vh; 
+    // width: 97%; 
+    display: block;
+    margin: 10px auto;
+  }
+
+  ion-card-header{
+    --background: #232628;
+    box-shadow: 4px 3px 15px 1px #000000;
+    font-size: 19px;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
+  }
