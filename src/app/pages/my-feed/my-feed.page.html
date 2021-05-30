@@ -29,7 +29,9 @@
 	<ng-container *ngIf="hasData">
 		<div id="columns">
 			<figure *ngFor="let feed of feeds" (click)="feedDetails(feed)">
-				<app-feed-thumbnail [feed]="feed" [isDetailView]=false></app-feed-thumbnail>
+				<ion-card>
+					<app-feed-thumbnail [feed]="feed" [isDetailView]=false></app-feed-thumbnail>
+				</ion-card>
 			</figure>
 		</div>
 		<ion-infinite-scroll (ionInfinite)="doInfinite($event)">

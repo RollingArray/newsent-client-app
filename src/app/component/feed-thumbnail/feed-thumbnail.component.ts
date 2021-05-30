@@ -18,5 +18,17 @@ export class FeedThumbnailComponent extends BaseViewComponent implements OnInit 
 		super(injector);
 	}
 
+	get topFiveKeywords()
+	{
+		let keyword = this.feed.keywords;
+		return keyword.split(',').slice(0, 5);
+	}
+
+	get allKeywords()
+	{
+		let keyword = this.feed.keywords;
+		return keyword.split(',');
+	}
+
 	ngOnInit() { }
 }

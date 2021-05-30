@@ -10,8 +10,6 @@
  * Last modified  : 2021-05-29 23:49:18
  */
 
-
-
 import { UserDeviceService } from './shared/service/user-device.service';
 import { ApiInterceptor } from "./shared/interceptor/api-interceptor.interceptor";
 import { AuthGuard } from "./shared/guard/auth.guard";
@@ -50,7 +48,10 @@ import { DisableBackService } from './shared/service/disable-back.service';
 		AppRoutingModule,
 		HttpClientModule,
 		ServiceWorkerModule.register('ngsw-worker.js', {
-			enabled: true,
+			enabled: environment.production,
+			// Register the ServiceWorker as soon as the app is stable
+			// or after 30 seconds (whichever comes first).
+			registrationStrategy: 'registerWhenStable:30000'
 		}),
 	],
 	providers: [
