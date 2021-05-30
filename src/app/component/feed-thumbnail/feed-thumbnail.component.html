@@ -26,10 +26,17 @@
 		<ion-icon name="calendar-outline"></ion-icon>
 		{{ feed.pubDate }}
 	</ion-card-subtitle>
+	
 	<br />
-
 	<ion-card-title>{{ feed.title }} </ion-card-title>
 </ion-card-header>
+<ion-card-content *ngIf="feed.twitterHandle">
+	<ion-card-subtitle class="twitter-handle">
+		<ion-icon name="logo-twitter"></ion-icon>
+		{{ feed.twitterHandle }}
+	</ion-card-subtitle>
+</ion-card-content>
+
 <ion-card-content *ngIf="!isDetailView">
 	<ul class="tags" *ngIf="topFiveKeywords.length > 1">
 		<li *ngFor="let keyword of topFiveKeywords; index as i">

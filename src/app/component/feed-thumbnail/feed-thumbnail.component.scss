@@ -172,3 +172,18 @@ ion-card-content{
 .tag:hover::after {
    border-left-color: crimson; 
 }
+
+.twitter-handle {
+  background: var(--ion-color-quaternary);
+  border-radius: 20px;
+  box-shadow: 4px 3px 15px 1px #000000;
+  color: #000;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  font-size: 12px;
+  -webkit-transition: color 0.2s;
+}

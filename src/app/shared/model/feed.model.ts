@@ -23,6 +23,7 @@ export interface FeedModel extends BaseModel{
 	source? : string,
 	tone?: string,
 	keywords?: string;
+	twitterHandle?: string;
 	magnitude? : string,
 	createdAt?: string,
 	dateTime?: string
