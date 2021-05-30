@@ -126,9 +126,10 @@ ion-card-content{
 }
 
 .tag {
-  background: var(--ion-color-light);
-  border-radius: 3px;
-  color: #2b2e2f;
+  background: var(--ion-color-primary);
+  border-radius: 20px;
+  box-shadow: 4px 3px 15px 1px #000000;
+  color: #fff;
   display: inline-block;
   height: 26px;
   line-height: 26px;
