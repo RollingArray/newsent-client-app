@@ -1,57 +1,54 @@
-<ion-card>
-	<app-image-holder [image]="feed.image"></app-image-holder>
-	<ion-row>
+<app-image-holder [image]="feed.image"></app-image-holder>
+<ion-row>
+	<ion-col>
+		<ion-img [src]="stringKey.ICON_ANGRY"></ion-img>
+	</ion-col>
+	<ion-col>
+		<ion-img [src]="stringKey.ICON_SAD"></ion-img>
+	</ion-col>
+	<ion-col>
+		<ion-img [src]="stringKey.ICON_NEUTRAL"></ion-img>
+	</ion-col>
+	<ion-col>
+		<ion-img [src]="stringKey.ICON_HAPPY"></ion-img>
+	</ion-col>
+	<ion-col>
+		<ion-img [src]="stringKey.ICON_DELIGHTFUL"></ion-img>
+	</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col>
+		<ion-range min="0.5" max="1.0" step="0.1" debounce="500" [value]="feed.tone"></ion-range>
+	</ion-col>
+</ion-row>
+<ion-card-header>
+	<ion-card-subtitle>
+		<ion-icon name="calendar-outline"></ion-icon>
+		{{ feed.pubDate }}
+	</ion-card-subtitle>
+	<br />
 
-		<ion-col>
-			<ion-img [src]="stringKey.ICON_ANGRY"></ion-img>
-		</ion-col>
-		<ion-col>
-			<ion-img [src]="stringKey.ICON_SAD"></ion-img>
-		</ion-col>
-		<ion-col>
-			<ion-img [src]="stringKey.ICON_NEUTRAL"></ion-img>
-		</ion-col>
-		<ion-col>
-			<ion-img [src]="stringKey.ICON_HAPPY"></ion-img>
-		</ion-col>
-		<ion-col>
-			<ion-img [src]="stringKey.ICON_DELIGHTFUL"></ion-img>
-		</ion-col>
-	</ion-row>
-	<ion-row>
-		<ion-col>
-			<ion-range min="0.5" max="1.0" step="0.1" debounce="500" [value]="feed.tone"></ion-range>
-		</ion-col>
-	</ion-row>
-	<ion-card-header>
-		<ion-card-subtitle>
-			<ion-icon name="calendar-outline"></ion-icon>
-			{{feed.pubDate}}
-		</ion-card-subtitle>
-		<br />
-
-		<ion-card-title>{{ feed.title }} </ion-card-title>
-	</ion-card-header>
-	<ion-card-content *ngIf="!isDetailView">
-		<ul class="tags" *ngIf="topFiveKeywords.length > 1">
-			<li *ngFor="let keyword of topFiveKeywords; index as i;">
-				<a href="#" class="tag">{{keyword}}</a>
-			</li>
-		</ul>
-	</ion-card-content>
-	<ion-card-content *ngIf="isDetailView">
-		<ul class="tags" *ngIf="allKeywords.length > 1">
-			<li *ngFor="let keyword of allKeywords; index as i;">
-				<a href="#" class="tag">{{keyword}}</a>
-			</li>
-		</ul>
-	</ion-card-content>
-	<div class="line" *ngIf="isDetailView"></div>
-	<ion-card-content *ngIf="isDetailView">
-		{{ feed.description }}
-	</ion-card-content>
-	<ion-footer *ngIf="!isDetailView">
-		<ion-icon name="newspaper"></ion-icon>
-			{{ feed.source }}
-	</ion-footer>
-</ion-card>
+	<ion-card-title>{{ feed.title }} </ion-card-title>
+</ion-card-header>
+<ion-card-content *ngIf="!isDetailView">
+	<ul class="tags" *ngIf="topFiveKeywords.length > 1">
+		<li *ngFor="let keyword of topFiveKeywords; index as i">
+			<a href="#" class="tag">{{ keyword }}</a>
+		</li>
+	</ul>
+</ion-card-content>
+<ion-card-content *ngIf="isDetailView">
+	<ul class="tags" *ngIf="allKeywords.length > 1">
+		<li *ngFor="let keyword of allKeywords; index as i">
+			<a href="#" class="tag">{{ keyword }}</a>
+		</li>
+	</ul>
+</ion-card-content>
+<div class="line" *ngIf="isDetailView"></div>
+<ion-card-content *ngIf="isDetailView">
+	{{ feed.description }}
+</ion-card-content>
+<ion-footer *ngIf="!isDetailView">
+	<ion-icon name="newspaper"></ion-icon>
+	{{ feed.source }}
+</ion-footer>

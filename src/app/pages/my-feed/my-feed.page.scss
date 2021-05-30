@@ -10,3 +10,10 @@ div#columns figure {
     display: inline-block;
     column-break-inside: avoid;
 }
+
+ion-card {
+    --background: #2b2e2f;
+    border-radius: 20px;
+    box-shadow: 4px 3px 15px 1px #000000;
+    cursor: pointer;
+  }
